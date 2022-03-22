@@ -1,0 +1,8 @@
+parts
+stage
+prime
+auto-import*
+*swp
+*.snap
+*.bz2
+src/http_clients/__pycache__/
