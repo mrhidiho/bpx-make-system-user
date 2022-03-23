@@ -1,4 +1,4 @@
-name: make-system-user
+name: bpx-make-system-user
 version: '12'
 summary: Make a system user file for auto import
 description: Make an auto-import.assert file
@@ -7,13 +7,13 @@ description: Make an auto-import.assert file
 
 grade: stable
 confinement: classic
-base: core20
+base: core18
 
 apps:
     make-system-user:
         command: bin/launch.sh
         environment:
-            PYTHONPATH: $SNAP/lib/python3.8/site-packages/
+            PYTHONPATH: $SNAP/lib/python3.6/site-packages/
 
 parts:
     make-system-user:

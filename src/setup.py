@@ -18,9 +18,9 @@ from os import path
 #    readmeDescription = f.read()
 
 setup(
-    name='make-system-user',
+    name='bpx-make-system-user',
     version='12',
-    description='make-system-user creates system user assertion files for Ubuntu Core',
+    description='bpx-make-system-user creates system user assertion files for Ubuntu Core',
     packages=["http_clients"],
     project_urls={
         'Bug Reports': 'https://github.com/knitzsche/make-system-user/issues',

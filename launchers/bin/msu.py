@@ -24,7 +24,7 @@ import subprocess
 import crypt
 import json
 import time
-from datetime import datetime, timedelta
+from datetime import date, datetime, timedelta
 import json
 import http_clients
 import requests
@@ -32,7 +32,7 @@ import getpass
 
 
 PROGRAM = ''
-VERSION = '0.1'
+VERSION = '1.03'
 
 #TODO: arg help i18n'd
 
@@ -147,7 +147,7 @@ def ssoAccount(args):
     response = authClient.request(
         "GET",
         url,
-        headers={"Content-Type": "application/json", "Accept": "application/json", "Authorization": authClient.auth},
+        headers ={"Content-Type": "application/json", "Accept": "application/json", "Authorization": authClient.auth},
     )
 
     if not response.ok:
@@ -327,7 +327,7 @@ def main(argv=None):
         userJson["ssh-keys"] = args.ssh_keys
 
     if args.serials:
-        userJson["format"] = "1";
+        userJson["format"] = "1"
         userJson["serials"] = args.serials
 
     if args.verbose:
