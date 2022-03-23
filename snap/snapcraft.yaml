@@ -20,7 +20,7 @@ parts:
         plugin: python
         source: src
         build-packages: [ libffi-dev ]
-        python-packages: [ argparse, requests, simplejson, pymacaroons, pyxdg ]
+        python-packages: [ argparse, requests, simplejson, pymacaroons, pyxdg, http_clients ]
         stage-packages: [ python3-venv ]
     bin:
       source: launchers
